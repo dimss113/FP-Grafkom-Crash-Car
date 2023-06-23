@@ -820,7 +820,7 @@ function animate() {
         box2: enemy,
       })
     ) {
-      cancelAnimationFrame(animationId);
+      // cancelAnimationFrame(animationId);
     }
     if (enemy.position.z >= 8) {
       scene.remove(enemy);
