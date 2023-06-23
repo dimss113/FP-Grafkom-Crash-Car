@@ -798,7 +798,7 @@ function animate() {
   }
 
   if (keys.s.pressed) {
-    if (cube.back >= 0.5) {
+    if (cube.back >= 15) {
       cube.velocity.z = 0;
     } else {
       cube.velocity.z = 0.05;
@@ -822,7 +822,7 @@ function animate() {
     ) {
       // cancelAnimationFrame(animationId);
     }
-    if (enemy.position.z >= 8) {
+    if (enemy.position.z >= 20) {
       scene.remove(enemy);
     }
   });
